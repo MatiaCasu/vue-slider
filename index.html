@@ -16,7 +16,8 @@
       </div>
       <div class="carousel-img">
         <a href="https://placeholder.com"><img :src="img.srcImg[img.i]" alt=""></a>
-        <div class="carousel-bullets">
+        <div class="bullets">
+          <div class="bullet" :class="index === img.i ? 'active' : ''"  v-for="(element , index) in img.srcImg" @click="img.i = index"></div>
         </div>
       </div>
       <div class="carousel-next">

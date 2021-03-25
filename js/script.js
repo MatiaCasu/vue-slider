@@ -8,7 +8,7 @@ var app = new Vue({
         "https://via.placeholder.com/1/FFF000",
       ],
       i: 0
-    }
+    },
   },
   methods: {
     prev: function(){
@@ -34,5 +34,4 @@ var app = new Vue({
       // }
     }
   }
-
 });
