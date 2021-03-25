@@ -14,16 +14,24 @@ var app = new Vue({
     prev: function(){
       this.img.i--;
 
-      if(this.img.i < 0){
-        this.img.i = this.img.srcImg.length - 1;
-      }
+      // ciclo prev con operatore ternario
+      this.img.i = this.img.i < 0 ? this.img.srcImg.length - 1 : this.img.i--;
+
+      // ciclo prev con if
+      // if(this.img.i < 0){
+      //   this.img.i = this.img.srcImg.length - 1;
+      // }
     },
     next: function(){
       this.img.i++;
 
-      if(this.img.i === this.img.srcImg.length){
-        this.img.i = 0;
-      }
+      // ciclo next con operatore ternario
+      this.img.i = this.img.i === this.img.srcImg.length ? this.img.i = 0 : this.img.i++;
+
+      // ciclo next con if
+      // if(this.img.i === this.img.srcImg.length){
+      //   this.img.i = 0;
+      // }
     }
   }
 
