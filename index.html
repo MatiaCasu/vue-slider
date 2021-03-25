@@ -12,15 +12,15 @@
   <div id="app" class="body-wrap">
     <div class="carousel-box">
       <div class="carousel-prev">
-        <i class="fas fa-chevron-left"></i>
+        <i @click="prev" class="fas fa-chevron-left"></i>
       </div>
       <div class="carousel-img">
-        <a href="https://placeholder.com"><img :src="srcImg[2]" alt=""></a>
+        <a href="https://placeholder.com"><img :src="img.srcImg[img.i]" alt=""></a>
         <div class="carousel-bullets">
         </div>
       </div>
       <div class="carousel-next">
-        <i class="fas fa-chevron-right"></i>
+        <i @click="next" class="fas fa-chevron-right"></i>
       </div>
     </div>
   </div>
