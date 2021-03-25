@@ -9,13 +9,13 @@
   <title>Carousel Vue</title>
 </head>
 <body>
-  <div class="body-wrap">
+  <div id="app" class="body-wrap">
     <div class="carousel-box">
       <div class="carousel-prev">
         <i class="fas fa-chevron-left"></i>
       </div>
       <div class="carousel-img">
-        <a href="https://placeholder.com"><img src="https://via.placeholder.com/1/0000FF" alt=""></a>
+        <a href="https://placeholder.com"><img :src="srcImg[2]" alt=""></a>
         <div class="carousel-bullets">
         </div>
       </div>
